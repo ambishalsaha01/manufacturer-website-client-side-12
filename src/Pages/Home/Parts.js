@@ -6,6 +6,7 @@ const Parts = () => {
     return (
         <div>
             <h2>Parts</h2>
+            <h2>{parts.length}</h2>
         </div>
     );
 };
