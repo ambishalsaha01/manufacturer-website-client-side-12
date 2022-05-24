@@ -3,7 +3,7 @@ import background from '../../images/banner/hero-banner.jpg'
 
 const Banner = () => {
     return (
-        <div className="hero min-h-screen bg-center bg-no-repeat bg-cover" style={{backgroundImage: `url(${background})`}}>
+        <div className="hero min-h-screen bg-center bg-no-repeat bg-cover object-cover" style={{backgroundImage: `url(${background})`}}>
             <div className="hero-content text-center">
                 <div className="max-w-5xl">
                     <h1 className="text-5xl font-bold">Car Parts Manufacturer</h1>
