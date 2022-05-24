@@ -15,6 +15,9 @@ const Part = ({ part }) => {
                     <p className='text-base'>Order Quantity: <small>{order_quantity}</small></p>
                     <p className='text-base'>Available Quantity: <small>{available_quantity}</small></p>
                 </div>
+                <div>
+                    <button className='btn btn-accent w-full mt-4'>Book Now</button>
+                </div>
             </div>
         </div>
     );
