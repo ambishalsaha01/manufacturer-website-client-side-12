@@ -7,7 +7,7 @@ const MyPortfolio = () => {
                 <h2 className='text-2xl'>Name: Bishal Saha</h2>
                 <p className='text-2xl'>Email: bishalsaha9989@gmail.com</p>
                 <div className=' my-4'>
-                    <h2 className='text-2xl font-bold'>educational background:</h2>
+                    <h2 className='text-2xl font-bold'>Educational background:</h2>
                     <p className='font-bold'>BSc</p>
                     <ul>
                         <li>Univarsity: North Western Univarsity</li>

@@ -8,8 +8,11 @@ import Register from './Pages/Login/Register';
 import MyPortfolio from './Pages/MyPortfolio/MyPortfolio';
 import Footer from './Pages/Shared/Footer';
 import Navbar from './Pages/Shared/Navbar';
-import RequireAuth from '../src/Pages/Login/RequireAuth'
+import RequireAuth from '../src/Pages/Login/RequireAuth';
 import NotFound from './Pages/Shared/NotFound';
+import Dashboard from './Pages/Dashboard/Dashboard';
+import MyProfile from './Pages/Dashboard/MyProfile';
+import AddReview from './Pages/Dashboard/AddReview';
 
 function App() {
   return (
@@ -24,6 +27,14 @@ function App() {
             <Purchase></Purchase>
           </RequireAuth>
         }></Route>
+        <Route path='/dashboard' element={
+          <RequireAuth>
+            <Dashboard></Dashboard>
+          </RequireAuth>
+        }>
+          <Route index element={<MyProfile></MyProfile>}></Route>
+          <Route path='review' element={<AddReview></AddReview>}></Route>
+        </Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>

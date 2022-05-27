@@ -2,7 +2,7 @@ import React from 'react';
 
 const Blogs = () => {
     return (
-        <div className='max-w-6xl mx-auto grid grid-cols-2 gap-5 py-5'>
+        <div className='max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 py-5'>
             <div className='border-2 p-5 rounded-2xl'>
                 <h2 className='text-xl font-bold mb-2'>How will you improve the performance of a React Application?</h2>
                 <p>Keeping component state local where necessary.Memoizing React components to prevent unnecessary re-renders. Lazy loading images in React.To optimize React rendering, you need to make sure that components receive only necessary props.It will let you control the CPU consumption and avoid over-rendering unnecessary features. The solution is to create a functional component that will collect all props and redistribute them to other components.</p>
