@@ -62,7 +62,7 @@ const Purchase = () => {
     return (
         <div className='py-12 max-w-5xl mx-auto'>
             <div>
-                <div className="grid grid-cols-2 gap-6">
+                <div className="grid p-5 md:grid-cols-2 gap-6">
                     <div>
                         <img className='object-cover' src={part.img} alt="service-img" />
                     </div>

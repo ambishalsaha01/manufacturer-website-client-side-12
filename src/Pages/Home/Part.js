@@ -12,7 +12,7 @@ const Part = ({ part }) => {
         <div>
             <div className='p-5 border-2 rounded-lg'>
                 <div>
-                    <img className='object-cover rounded-lg mb-2' src={img} alt="" />
+                    <img className='object-cover h-60 w-full rounded-lg mb-2' src={img} alt="" />
                 </div>
                 <div>
                     <h3 className='text-2xl font-bold mb-1'>{productName}</h3>
