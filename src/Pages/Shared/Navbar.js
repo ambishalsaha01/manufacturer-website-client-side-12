@@ -16,17 +16,17 @@ const Navbar = () => {
         <li><Link to="/blogs">Blogs</Link></li>
         <li><Link to="/portfolio">Portfolio</Link></li>
         {
-            user?
-            <li><Link to="/dashboard">Dashboard</Link></li>
-            :
-            <li></li>
+            user ?
+                <li><Link to="/dashboard">Dashboard</Link></li>
+                :
+                <li></li>
 
         }
         {
-            user?
-            <button onClick={handleSignOut} className='bg-accent text-white rounded-md p-3'>SignOut</button>
-            :
-            <li className='bg-accent text-white rounded-md'><Link to="/login">Login</Link></li>
+            user ?
+                <button onClick={handleSignOut} className='bg-accent text-white rounded-md p-3'>SignOut</button>
+                :
+                <li className='bg-accent text-white rounded-md'><Link to="/login">Login</Link></li>
         }
     </>
     return (
@@ -42,10 +42,16 @@ const Navbar = () => {
                 </div>
                 <a className="btn btn-ghost normal-case text-xl">Car Manufacturer</a>
             </div>
-            <div className="navbar-end hidden lg:flex">
+            <div className="navbar-center hidden lg:flex">
+                <label for="my-drawer-2" class="btn btn-primary drawer-button lg:hidden">Open drawer</label>
                 <ul className="menu menu-horizontal p-0">
                     {navItems}
                 </ul>
+            </div>
+            <div className="navbar-end">
+                <label for="my-drawer-2" class="btn drawer-button lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </label>
             </div>
         </div>
     );
