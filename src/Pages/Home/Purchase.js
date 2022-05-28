@@ -6,7 +6,7 @@ const Purchase = () => {
 
     const [part, setPart] = useState({})
     useEffect(() => {
-        const url = `http://localhost:5000/part/${partId}`
+        const url = `https://thawing-fjord-45381.herokuapp.com/part/${partId}`
         console.log(url)
         fetch(url)
             .then(res => res.json())
@@ -21,7 +21,7 @@ const Purchase = () => {
         const restockquantity = parseInt(event.target.quantity.value);
         const totalQuantity = oldquantity + restockquantity;
         const updatedStock = { totalQuantity };
-        const url = `http://localhost:5000/part/${partId}`;
+        const url = `https://thawing-fjord-45381.herokuapp.com/part/${partId}`;
         fetch(url, {
             method: 'PUT',
             headers: {
@@ -44,7 +44,7 @@ const Purchase = () => {
         const restockquantity = parseInt(event.target.quantity.value);
         const totalQuantity = oldquantity - restockquantity;
         const updatedStock = { totalQuantity };
-        const url = `http://localhost:5000/part/${partId}`;
+        const url = `https://thawing-fjord-45381.herokuapp.com/part/${partId}`;
         fetch(url, {
             method: 'PUT',
             headers: {

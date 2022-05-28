@@ -9,7 +9,7 @@ const MyProfile = () => {
 
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
-        const url = 'http://localhost:5000/profile'
+        const url = 'https://thawing-fjord-45381.herokuapp.com/profile'
         fetch(url, {
             method: 'POST',
             headers: {
